@@ -8,9 +8,7 @@ An interactive **health informatics portfolio dashboard** built with Python and 
 
 > **Disclaimer:** All default data are **synthetic** and for education/portfolio use only. This app is **not** for clinical decision-making.
 
-![Dashboard preview](docs/screenshots/01_overview.png)
-
-*Add screenshots under `docs/screenshots/` after running locally (see [Screenshots](#screenshots)).*
+**Live demo:** run locally with Streamlit (see [Quick start](#quick-start)). Add screenshots under `docs/screenshots/` for your GitHub profile (see [Screenshots](#screenshots)).
 
 ---
 
