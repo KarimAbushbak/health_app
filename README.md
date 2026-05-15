@@ -43,6 +43,17 @@ On first run, the app creates `data/healthcare_records.csv` automatically if it 
 
 ---
 
+## Deploy on Replit (live URL)
+
+1. Open [Replit](https://replit.com/) and sign in.
+2. **Create Repl** → **Import from GitHub** → choose [`KarimAbushbak/health_app`](https://github.com/KarimAbushbak/health_app).
+3. Replit reads `.replit` and `requirements.txt` automatically. Click **Run** to preview in the workspace.
+4. For a public link: open **Deployments** (or **Publish**) → **Deploy** → use the generated `*.replit.app` URL.
+
+The repo includes `run_replit.py`, `.replit`, and `replit.nix` so Streamlit binds to `0.0.0.0` on Replit’s `PORT` (default `8080`).
+
+---
+
 ## Tech stack
 
 - **Streamlit** — multipage UI
@@ -92,6 +103,8 @@ Do **not** commit PHI to a public repository. Use only data you are authorized t
 ```
 health/
 ├── app.py                         # Landing page
+├── run_replit.py                  # Replit / cloud entrypoint
+├── .replit                        # Replit run + deploy config
 ├── requirements.txt
 ├── data/
 │   └── healthcare_records.csv     # Synthetic data (auto-created)
