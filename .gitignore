@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.DS_Store
+
+# Local-only / large external dataset (app uses synthetic data in data/)
+healthcare_dataset.csv
