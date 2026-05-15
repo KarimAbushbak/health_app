@@ -40,8 +40,18 @@ def apply_healthcare_theme() -> None:
                 padding: 0.75rem 1rem;
                 box-shadow: 0 1px 3px rgba(13, 59, 92, 0.08);
             }
-            div[data-testid="stMetric"] label {
+            div[data-testid="stMetric"] label,
+            div[data-testid="stMetric"] label p {
                 color: #64748b !important;
+            }
+            div[data-testid="stMetric"] [data-testid="stMetricValue"],
+            div[data-testid="stMetricValue"],
+            div[data-testid="stMetric"] [data-testid="stMetricValue"] * {
+                color: #0d3b5c !important;
+                -webkit-text-fill-color: #0d3b5c !important;
+            }
+            div[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+                color: #0f766e !important;
             }
             h1, h2, h3 {
                 color: #0f172a;
