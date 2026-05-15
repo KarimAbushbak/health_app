@@ -29,8 +29,8 @@ An interactive **health informatics portfolio dashboard** built with Python and 
 ## Quick start
 
 ```powershell
-git clone https://github.com/karimabushbak/healthcare-analytics-dashboard.git
-cd healthcare-analytics-dashboard
+git clone https://github.com/KarimAbushbak/health_app.git
+cd health_app
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt

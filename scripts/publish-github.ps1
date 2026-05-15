@@ -2,8 +2,12 @@
 $ErrorActionPreference = "Stop"
 Set-Location (Split-Path $PSScriptRoot -Parent)
 
-$repo = "healthcare-analytics-dashboard"
+$repo = "health_app"
+$remote = "https://github.com/KarimAbushbak/health_app.git"
 
-gh repo create $repo --public --source=. --remote=origin --push --description "Streamlit healthcare analytics dashboard with synthetic data, KPIs, and data quality insights"
+git remote remove origin 2>$null
+git remote add origin $remote
+git branch -M main
+git push -u origin main
 
-Write-Host "Done. Repo: https://github.com/$(gh api user -q .login)/$repo"
+Write-Host "Done. Repo: https://github.com/KarimAbushbak/$repo"
